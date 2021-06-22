@@ -1,4 +1,13 @@
 # Visualizations
-Repo that contains nice data visualizations.
+Repo that contains nice data visualizations.  
+this repository is intended to contain beautiful data visualizations, which I do to develop my skills.  
+The plots shown here are made in R and in Python, using:
 
-![](Visualizations/visualization-01.jpeg)
+- R: ggplot2 (which I prefer over Python :p)
+- Python: matplotlib, seaborn
+
+There are two folders here: [Visualizations](Visualizations) - that contains the image files -, and [Scripts](Scripts) - that contains the .R and .py files that I used to generate the plots.
+
+---
+
+<p align="center">![](Visualizations/visualization-01.jpeg)</p>
