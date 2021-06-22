@@ -10,4 +10,4 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 
 ---
 
-<p align="center">![](Visualizations/visualization-01.jpeg)</p>
+<p align="center"> ![](Visualizations/visualization-01.jpeg) </p>
