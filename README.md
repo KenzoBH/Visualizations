@@ -10,4 +10,8 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 
 ---
 
-<p align="center"> ![](Visualizations/visualization-01.jpeg) </p>
+**Plot 01**  
+Revenue predictions plot - sample data.
+<p align="center">
+  <img src="Visualizations/visualization-01.jpeg" />
+</p>
