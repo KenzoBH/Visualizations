@@ -11,7 +11,7 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 ---
 
 **Plot 02**  
-Company chagebacks grouped by bank - sample data.
+Company chargebacks grouped by bank - sample data.
 <p align="center">
   <img src="Visualizations/visualization-02.jpeg" />
 </p>
