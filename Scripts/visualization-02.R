@@ -3,35 +3,37 @@ options(scipen = 999)
 library(tidyverse)
 
 df <- data.frame(
-  tipo = c(rep("Banco 1", 2000), rep("Banco 2", 1000)),
+  cliente = c(rep("Cliente 1", 2000), rep("Cliente 2", 1000)),
   valor = c(rnorm(2000, 10000, 25000), rnorm(1000, 30000, 50000))
   ) %>% 
-    group_by(tipo) %>% 
+    group_by(cliente) %>% 
     summarise(soma = sum(valor) / 1e6, qtd = n())
 
-grouped_df %>% 
+df
+
+df %>% 
   ggplot() +
-  geom_col(aes(x = tipo, y = soma), fill = "#4392f1") +
+  geom_col(aes(x = cliente, y = soma), fill = "#4392f1") +
   
-  annotate("text", x = 1, y = grouped_df$soma[1] + 2,
+  annotate("text", x = 1, y = grouped_df$soma[1] + 1,
            label = str_c(round(grouped_df$soma[1], 0), "M $"),
            color = "black") +
-  annotate("text", x = 2, y = grouped_df$soma[2] + 2,
+  annotate("text", x = 2, y = grouped_df$soma[2] + 1,
            label = str_c(round(grouped_df$soma[2], 0), "M $"),
            color = "black") +
   
-  annotate("text", x = 1, y = grouped_df$soma[1] - 3.5,
+  annotate("text", x = 1, y = grouped_df$soma[1] - 5,
            label = str_c(grouped_df$qtd[1], "\nchargebacks"),
            color = "white") +
-  annotate("text", x = 2, y = grouped_df$soma[2] - 3.5,
+  annotate("text", x = 2, y = grouped_df$soma[2] - 5,
            label = str_c(grouped_df$qtd[2], "\nchargebacks"),
            color = "white") +
   
   labs(
-    title = "Chargebacks do Banco 2 são bem mais caros",
+    title = "Chargebacks do Cliente 2 são bem mais caros",
     subtitle = "Favor conversar com responsável pelos chargebacks",
     caption = "Dados referentes aos chargebacks de 2021",
-    x = "Banco", y = "Soma dos chagebacks (milhões de $)"
+    x = "Cliente", y = "Soma dos chagebacks (milhões de $)"
   ) +
   
   theme(
