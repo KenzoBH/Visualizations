@@ -10,6 +10,12 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 
 ---
 
+**Plot 03**  
+Restaurants at Vila Carrão, japanese neighborhood - scraped data from ifood website.
+<p align="center">
+  <img src="Visualizations/visualization-03.jpeg" />
+</p>
+
 **Plot 02**  
 Company chargebacks grouped by clients - sample data.
 <p align="center">
