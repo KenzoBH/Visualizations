@@ -10,6 +10,12 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 
 ---
 
+**Plot 04**  
+Alcohol consumption after covid - sample data.
+<p align="center">
+  <img src="Visualizations/visualization-04.jpeg" />
+</p>
+
 **Plot 03**  
 Restaurants at Vila Carrão, japanese neighborhood - scraped data from ifood website.
 <p align="center">
