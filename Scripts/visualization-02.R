@@ -9,31 +9,29 @@ df <- data.frame(
     group_by(cliente) %>% 
     summarise(soma = sum(valor) / 1e6, qtd = n())
 
-df
-
 df %>% 
   ggplot() +
   geom_col(aes(x = cliente, y = soma), fill = "#4392f1") +
   
-  annotate("text", x = 1, y = grouped_df$soma[1] + 1,
-           label = str_c(round(grouped_df$soma[1], 0), "M $"),
+  annotate("text", x = 1, y = df$soma[1] + 1,
+           label = str_c(round(df$soma[1], 0), "M $"),
            color = "black") +
-  annotate("text", x = 2, y = grouped_df$soma[2] + 1,
-           label = str_c(round(grouped_df$soma[2], 0), "M $"),
+  annotate("text", x = 2, y = df$soma[2] + 1,
+           label = str_c(round(df$soma[2], 0), "M $"),
            color = "black") +
   
-  annotate("text", x = 1, y = grouped_df$soma[1] - 5,
-           label = str_c(grouped_df$qtd[1], "\nchargebacks"),
+  annotate("text", x = 1, y = df$soma[1] - 5,
+           label = str_c(df$qtd[1], "\nchargebacks"),
            color = "white") +
-  annotate("text", x = 2, y = grouped_df$soma[2] - 5,
-           label = str_c(grouped_df$qtd[2], "\nchargebacks"),
+  annotate("text", x = 2, y = df$soma[2] - 5,
+           label = str_c(df$qtd[2], "\nchargebacks"),
            color = "white") +
   
   labs(
     title = "Chargebacks do Cliente 2 são bem mais caros",
     subtitle = "Favor conversar com responsável pelos chargebacks",
     caption = "Dados referentes aos chargebacks de 2021",
-    x = "Cliente", y = "Soma dos chagebacks (milhões de $)"
+    x = "Cliente", y = "Soma dos chargebacks (milhões de $)"
   ) +
   
   theme(
@@ -42,4 +40,5 @@ df %>%
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     panel.background = element_blank(),
-    axis.line = element_line(colour = "black"))
+    axis.line = element_line(colour = "black")
+    )
