@@ -27,8 +27,8 @@ contando com o maior evento okinawano do país.",
            color = "#888888") +
   
   labs(
-    title = "Restaurantes da Vila Carrão",
-    subtitle = "Quantidade de restaurantes na região da Vila Carrão agrupados por tipo",
+    title = "Mais que Pizza",
+    subtitle = "Quantidade de restaurantes na região da Vila Carrão, agrupados por tipo",
     caption = "Fonte: ifood
 Foram utilizadas técnicas de Web Scraping para a coleta dos dados
 Disponível em: GitHub.com/KenzoBH",
