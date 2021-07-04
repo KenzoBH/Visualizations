@@ -10,6 +10,12 @@ There are two folders here: [Visualizations](Visualizations) - that contains the
 
 ---
 
+**Plot 05**  
+About pie charts
+<p align="center">
+  <img src="Visualizations/visualization-05.jpeg" />
+</p>
+
 **Plot 04**  
 Alcohol consumption after covid - sample data.
 <p align="center">
